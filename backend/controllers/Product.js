@@ -9,6 +9,7 @@ const addProduct = async (req, res) => {
 
 // Get all products
 const allProducts = async (req,res) => {
+    console.log("Display All")
     const products = await Product.find();
  res.json(products);
 }
